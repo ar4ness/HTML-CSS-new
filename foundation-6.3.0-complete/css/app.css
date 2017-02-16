@@ -1,0 +1,43 @@
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+
+.col-wrapper > div {
+	padding: 50%;
+	background: #0f0;
+}
+.col-wrapper:nth-child(1) > div {background: #f00;}
+.col-wrapper:nth-child(2) > div {background: #0f0;}
+.col-wrapper:nth-child(3) > div {background: #00f;}
+
+.nested-wrapper {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.col-pallete .column-block > div {
+	height: 100px;
+	background: #dadada;
+}
+
+header, footer {background: #dadada;}
+ul {margin: 0;}
+
+.items li {
+	display: inline-block;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+
+.article-tittle {
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+.pict {
+	border: 2px solid black;
+	padding: 10 px;
+}
+.flowers {
+	margin-top: 20px;
+}
