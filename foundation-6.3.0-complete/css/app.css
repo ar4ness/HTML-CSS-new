@@ -21,15 +21,43 @@ html, body {
 	background: #dadada;
 }
 
+
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear:  both;
+}
 header, footer {background: #dadada;}
 ul {margin: 0;}
 
-.items li {
+.logo {
+	float: left;
+}
+.navigation li{
+	float: right;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation li {
 	display: inline-block;
 	margin-top: 15px;
 	margin-right: 10px;
 }
 
+
+header.container
 .article-tittle {
 	margin-top: 25px;
 	margin-bottom: 10px;
