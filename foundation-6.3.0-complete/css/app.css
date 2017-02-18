@@ -22,6 +22,8 @@ html, body {
 }
 
 
+header, footer {background: #dadada;}
+ul {margin: 0;}
 
 .container {
 	width: 100%;
@@ -29,24 +31,12 @@ html, body {
 	margin: 0 auto;
 	padding: 15px 0;
 }
-
-.container:after {
-  content: "";
-  display: table;
-  clear:  both;
-}
-header, footer {background: #dadada;}
-ul {margin: 0;}
-
-.logo {
-	float: left;
-}
-.navigation li{
-	float: right;
+img {
+	
+	max-width: 100%;
 }
 
 .navigation ul {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -57,15 +47,17 @@ ul {margin: 0;}
 }
 
 
-header.container
 .article-tittle {
 	margin-top: 25px;
 	margin-bottom: 10px;
 }
-.pict {
+.flowers .pict {
 	border: 2px solid black;
-	padding: 10 px;
+	padding: 10px;
 }
 .flowers {
 	margin-top: 20px;
 }
+/*.flowers > div {
+	padding: 15 px;
+}*/
