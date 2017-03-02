@@ -222,11 +222,47 @@ a:hover, a:active {
 .services-block > div {
   margin-bottom: 30px;
 }
-
+.support-block h2 {
+  margin-bottom: 20px;
+}
+.support-block ul {
+  margin-top: 40px;
+}
+.support-block li {
+  color: #616161;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 35px;
+}
 .contact-block {
   background-color: #753d9d;
-  margin-top: 48px;
   margin-bottom: 48px;
+}
+
+
+.blog-block {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.blog-block .blog-events {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 2px solid #a2a2a2;
+}
+
+.register-block {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  background-color: #753d9d;
+  color: #fff;
+}
+
+.footer-block {
+  background-color: #0d113d;
+  color: #fff;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 @media screen and (max-width:640px) {
