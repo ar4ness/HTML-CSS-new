@@ -98,9 +98,6 @@ a:hover, a:active {
 }
 .article-top li:last-child {margin-right: 0;}
 
-.navigation a {
-  color: #fff;
-}
 .bordered-btn {
   min-width: 262px;
   /*padding-left: 18px;*/
@@ -112,7 +109,8 @@ a:hover, a:active {
   font-weight: 400;
   min-height: 65px;
   margin-top: 55px;
-  line-height:2.2;
+  line-height: 2.2;
+  transition: all ease-in-out 0.3s;
 }
 .bordered-btn.btn-white:hover {
   background-color: #753d9d;
@@ -211,6 +209,8 @@ a:hover, a:active {
   margin-top: 40px;
 }
 
+
+
 .services-block {
   margin-top: 65px;
   margin-bottom: 45px;
@@ -239,7 +239,7 @@ a:hover, a:active {
   overflow: hidden;
 }
 
-.services-block .strategy:before {
+.strategy:before {
   content: " ";
   width: 100%;
   height: 100%;
@@ -248,7 +248,7 @@ a:hover, a:active {
   position: absolute;
   background-color: rgba(25, 11, 35, 0.6);
 }
-.services-block .strategy:after {
+.strategy:after {
   content: '';
   height: 100px;
   width: 100%;
@@ -256,7 +256,7 @@ a:hover, a:active {
   left: 0;
   position: absolute;
   background: linear-gradient(to bottom, rgba(41,137,216,0) 0%,rgba(117,61,157,0.6) 100%);
-  transition: top ease-in-out 0.6s ;
+
 }
 .services-benef .strategy-holder {
   position: absolute;
@@ -264,13 +264,16 @@ a:hover, a:active {
  /* bottom: 10px;*/
   left: 20px;
   top: 300px;
+  transition: top ease-in-out 0.5s ;
+}
+.strategy-holder:after {
+  transition: all ease-in-out 0.5s ;
 }
 
-.strategy:hover {
+.strategy-holder:hover {
   height: 100%;
   background-color: #753d9d;
-  transition: all ease-in-out 0.6s ;
-  transform: top(135px);
+  top: 135px;
 }
 
 .services-block .hor-line {
@@ -278,6 +281,8 @@ a:hover, a:active {
   background: #ffffff;
   border-radius: 4px;
   height: 4px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .services-block .user-exper  {
@@ -293,6 +298,12 @@ a:hover, a:active {
   border-radius: 4px;
 }
 
+.support-holder {
+  position: relative;
+}
+.support-block .support-holder{
+  float: right;
+}
 
 .support-block h2 {
   margin-bottom: 20px;
@@ -306,11 +317,27 @@ a:hover, a:active {
   font-weight: 300;
   line-height: 35px;
   position: relative;
-  padding-left: 15px;
+  padding-left: 10px;
 }
-.support-block li{
-  height:50%;
+.support-block li:before{
+  contenet: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #616161;
 }
+.support-holder img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(50%);
+
+}
+
+
+
+
 
 .contact-block {
   background-color: #753d9d;
