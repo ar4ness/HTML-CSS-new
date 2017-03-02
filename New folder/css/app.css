@@ -221,20 +221,69 @@ a:hover, a:active {
 }
 .services-block .services-benef {
   margin-bottom: 30px;
-  min-height: 340px;
   height: 100%;
   width: 100%;
+  min-height: 340px;
+  /*border-radius: 4px;
+  overflow: hidden;*/
+  position: relative;
+
+}
+
+
+
+
+.services-block .strategy {
+  position: relative;
   border-radius: 4px;
   overflow: hidden;
 }
 
-.services-block .strategy {
-  background: url("../img/strategy2.jpg") no-repeat;
-  -webkit-background-size: 100% 340px;
-  background-size: 100% 340px;
+.services-block .strategy:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(25, 11, 35, 0.6);
 }
-.services-block .user-exper img{
+.services-block .strategy:after {
+  content: '';
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(41,137,216,0) 0%,rgba(117,61,157,0.6) 100%);
+  transition: top ease-in-out 0.6s ;
+}
+.services-benef .strategy-holder {
+  position: absolute;
+  color: #ffffff;
+ /* bottom: 10px;*/
+  left: 20px;
+  top: 300px;
+}
+
+.strategy:hover {
+  height: 100%;
+  background-color: #753d9d;
+  transition: all ease-in-out 0.6s ;
+  transform: top(135px);
+}
+
+.services-block .hor-line {
+  width: 120px;
+  background: #ffffff;
   border-radius: 4px;
+  height: 4px;
+}
+
+.services-block .user-exper  {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 
@@ -256,10 +305,17 @@ a:hover, a:active {
   font-size: 15px;
   font-weight: 300;
   line-height: 35px;
+  position: relative;
+  padding-left: 15px;
 }
+.support-block li{
+  height:50%;
+}
+
 .contact-block {
   background-color: #753d9d;
   margin-bottom: 48px;
+  color: #fff;
 }
 
 
