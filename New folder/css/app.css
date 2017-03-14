@@ -491,6 +491,7 @@ a:hover, a:active {
 }
 .blog-events:hover p, .blog-events:hover .dark {
   color: #fff;
+  margin-left: 15px;
 }
 
 
