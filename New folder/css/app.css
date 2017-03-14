@@ -577,6 +577,8 @@ a:hover, a:active {
 }
 
 
+
+
 .article-top {
   position: relative;
   background: transparent;
@@ -607,7 +609,7 @@ a:hover, a:active {
 .header-slade-wrapper.slide-3 {
   background: url(../img/header-picture-3.jpg ) no-repeat 50%/cover;
 }
-.header-wrapper:before {
+/*.header-wrapper:before {
   content: " ";
   width: 100%;
   height: 100%;
@@ -615,7 +617,7 @@ a:hover, a:active {
   left: 0;
   position: absolute;
   background-color: rgba(25, 11, 35, 0.6);
-}
+}*/
 
 .header-slider .slick-dots {
   margin: 0 auto;
@@ -647,8 +649,6 @@ a:hover, a:active {
   color: transparent;
   font-size: 0;
   position: absolute;
-  width: 30px;
-  height: 20px;
   top: 0;
 }
 
